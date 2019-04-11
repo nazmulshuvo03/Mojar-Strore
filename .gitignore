@@ -24,3 +24,6 @@ yarn-error.log*
 
 # IDE file
 .idea/
+
+# paypal api key file
+.env.development
