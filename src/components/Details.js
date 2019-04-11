@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { ProductConsumer } from "../context";
-import { Link } from "react-router-dom";
-import { ButtonContainer } from "./Button";
+import { ProductConsumer } from '../context';
+import { Link } from 'react-router-dom';
+import { ButtonContainer } from './Button';
 
 export default class Details extends Component {
 	render() {
@@ -21,7 +21,7 @@ export default class Details extends Component {
 							<div className="row">
 								{/* product image */}
 								<div className="col-10 mx-auto col-md-6 my-3">
-									<img src={img} alt="product" className="img-fluid"/>
+									<img src={img} alt="product" className="img-fluid" />
 								</div>
 								{/* product text */}
 								<div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
@@ -31,21 +31,18 @@ export default class Details extends Component {
 									</h4>
 									<h4 className="text-blue">
 										<strong>
-											price: <span>$</span>{price}
+											price: <span>$</span>
+											{price}
 										</strong>
 									</h4>
 									<p className="text-capitalize font-weight-bold mt-3 mb-0">
 										some info about the product:
 									</p>
-									<p className="text-muted lead">
-										{info}
-									</p>
+									<p className="text-muted lead">{info}</p>
 									{/* buttons */}
 									<div>
 										<Link to="/">
-											<ButtonContainer>
-												back to products
-											</ButtonContainer>
+											<ButtonContainer>back to products</ButtonContainer>
 										</Link>
 										<ButtonContainer
 											cart
@@ -55,15 +52,15 @@ export default class Details extends Component {
 												value.openModal(id);
 											}}
 										>
-											{inCart ? 'in cart' : "add to cart"}
+											{inCart ? 'in cart' : 'add to cart'}
 										</ButtonContainer>
 									</div>
 								</div>
 							</div>
 						</div>
-					)
+					);
 				}}
 			</ProductConsumer>
-		)
+		);
 	}
 }

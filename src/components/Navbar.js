@@ -10,9 +10,9 @@ export default class Navbar extends Component {
 		return (
 			<NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
 				{/*
-                    https://www.iconfinder.com/icons/1243689/call_phone_icon
+					Thanks to: 
+                    https://www.iconfinder.com/icons/3387285/computer_ecommerce_market_shopping_icon
                     Creative Commons (Attribution 3.0 Unported);
-                    https://www.iconfinder.com/Makoto_msk
                 */}
 				<Link to="/">
 					<img src={logo} alt="store" className="navbar-brand" />
@@ -46,4 +46,3 @@ const NavWrapper = styled.nav`
 		text-transform: capitalize;
 	}
 `;
-

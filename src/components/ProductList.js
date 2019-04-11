@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Product from './Product';
 import Title from './Title';
-import { ProductConsumer } from "../context";
+import { ProductConsumer } from '../context';
 
 export default class ProductList extends Component {
 	render() {
@@ -12,16 +12,14 @@ export default class ProductList extends Component {
 					<div className="container">
 						<Title name="Mojar" title="store" />
 						<div className="row">
-                            <ProductConsumer>
-                                {value => {
-                                    return(
-                                        value.products.map(product => {
-                                            return <Product key={product.id} product={product} />
-                                        })
-                                    )
-                                }}
-                            </ProductConsumer>
-                        </div>
+							<ProductConsumer>
+								{(value) => {
+									return value.products.map((product) => {
+										return <Product key={product.id} product={product} />;
+									});
+								}}
+							</ProductConsumer>
+						</div>
 					</div>
 				</div>
 			</React.Fragment>
