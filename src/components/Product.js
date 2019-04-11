@@ -62,12 +62,12 @@ Product.propTypes = {
 const ProductWrapper = styled.div`
 	.card {
 		border-color: transparent;
-		transition: all 1s linear;
+		transition: all 0.4s linear;
 	}
 	.card-footer {
 		background: transparent;
 		border-top: transparent;
-		transition: all 1s linear;
+		transition: all 0.4s linear;
 	}
 	&:hover {
 		.card {
@@ -83,7 +83,7 @@ const ProductWrapper = styled.div`
 		overflow: hidden;
 	}
 	.card-img-top {
-		transition: all 1s linear;
+		transition: all 0.4s linear;
 	}
 	.img-container: hover .card-img-top {
 		transform: scale(1.2);
@@ -102,7 +102,7 @@ const ProductWrapper = styled.div`
 	}
 	.img-container: hover .cart-btn {
 		transform: translate(0, 0);
-		transition: all 1s linear;
+		transition: all 0.4s linear;
 	}
 	.cart-btn: hover {
 		color: var(--mainBlue);
