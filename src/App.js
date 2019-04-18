@@ -10,6 +10,8 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
+import FloatingButton from './components/FloatingButton';
+import About from './components/About';
 
 class App extends Component {
 	render() {
@@ -20,9 +22,11 @@ class App extends Component {
 					<Route exact path="/" component={ProductList} />
 					<Route path="/details" component={Details} />
 					<Route path="/cart" component={Cart} />
+					<Route path="/about" component={About} />
 					<Route component={Default} />
 				</Switch>
 				<Modal />
+				<FloatingButton />
 			</React.Fragment>
 		);
 	}
