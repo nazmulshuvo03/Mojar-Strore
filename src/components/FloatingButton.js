@@ -35,6 +35,7 @@ function FloatingButton(props) {
 				color="primary"
 				className={classes.root}
 				href="https://github.com/nazmulshuvo03/Mojar-Strore"
+				target="_blank"
 			>
 				<span className={classes.label}>source</span>
 			</Fab>
