@@ -11,10 +11,10 @@ const styles = (theme) => ({
 		margin: theme.spacing.unit,
 		bottom: theme.spacing.unit * 7,
 		left: theme.spacing.unit * 158,
-		backgroundColor: purple[700],
+		backgroundColor: purple[900],
 		'&:hover': {
 			backgroundColor: theme.palette.common.white,
-			color: purple[800]
+			color: purple[900]
 		},
 		'&:focus': {
 			backgroundColor: theme.palette.common.white,
